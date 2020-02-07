@@ -1,0 +1,132 @@
+@media(max-width: 760px){
+    .play{
+        display: none;
+    }
+
+    .container-footer{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .policy{
+        margin-top: 8px;
+    }
+
+    .policy a:first-child{
+        margin-left: 0;
+    }
+}
+
+.menu-btn{
+    display: none;
+}
+
+@media(max-width: 540px){
+    .menu-btn{
+        display: block;
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        background-color: #ffffff;
+        top: 40px;
+        right: 35px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .menu-btn::before{
+        content: "";
+        display: block;
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        background-color: #ffffff;
+        margin-top: -7px;
+        transition: transform 0.2s ease;
+    }
+
+    .menu-btn::after{
+        content: "";
+        display: block;
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        background-color: #ffffff;
+        margin-top: 5px;
+        transition: transform 0.2s ease;
+    }
+
+    .menu-btn-active{
+        height: 0;
+    }
+
+    .menu-btn-active::before{
+        transform: rotate(45deg);
+        margin-top: 0;
+    }
+
+    .menu-btn-active::after{
+        transform: rotate(-45deg);
+        margin-top: 0;
+    }
+
+    .nav{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-color: #9d2929;
+        width: 100%;
+        padding-bottom: 40px;
+    }
+
+    .nav img{
+        order: 2;
+        margin-top: 30px;
+    }
+
+    .container-header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-active{
+        display: flex;
+    }
+
+    .header-btn{
+        display: flex;
+        margin: auto;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 25px;
+        order: 3;
+    }
+
+    .header-btn a{
+        margin-left: 0;
+        margin-bottom: 17px;
+    }
+
+    .social-link{
+        order: 2;
+    }
+
+    .social-link a:first-child{
+        margin-left: 0;
+    }
+
+    .title{
+        font-size: 65px;
+    }
+
+    .series{
+        max-width: 220px;
+    }
+    
+    .swiper-container{
+        width: 80%;
+    }
+}
